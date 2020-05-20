@@ -1,0 +1,202 @@
+"Dusty Rooms
+",Null,2+,-0,,,,,,"Normal
+"
+"Dusty Rooms
+",Null,2+,-0,,,,,,"Normal
+"
+Creaking Hallway,Null,2+,-0,,,,,,"Normal
+"
+Creaking Hallway,Null,2+,-0,,,,,,"Normal
+"
+Silent Stairway,Null,2+,-0,,,,,,"Normal
+"
+Silent Stairway,Null,2+,-0,,,,,,"Normal
+"
+Dripping Chasm,Null,2+,-0,,,,,,"Normal
+"
+Dripping Chasm,Null,2+,-0,,,,,,"Normal
+"
+Echoing Shaft,Null,2+,-0,,,,,,"Normal
+"
+Echoing Shaft,Null,2+,-0,,,,,,"Normal
+"
+Abandoned Workshops,Null,2+,-0,,,,,,Normal
+Abandoned Workshops,Null,2+,-0,,,,,,Normal
+Empty Storerooms,Null,2+,-0,,,,,,Normal
+Empty Storerooms,Null,2+,-0,,,,,,Normal
+Collapsed Tunnel,Null,3+,-0,,,,,,Normal
+Tumbled Stairs,Null,3+,-0,,,,,,Normal
+Welded Doorway,Null,4+,-0,,,,,,Normal
+Hastily Filled Pit,Null,"4+
+",-0,,,,,,Normal
+Sealed Airshaft,"Null
+",4+,-0,,,,,,Normal
+Nailed Hatchway,"Null
+",4+,-0,,,,,,Normal
+Looted Tavern,Null,2+,-0,,,,,,Normal
+Empty Crypt,Null,2+,-0,,,,,,Normal
+Silver Bars,"Basic Treasure
+",2+,5G/15G/30G,,,,,,Normal
+"Minted Coins
+","Basic Treasure
+",2+,5G/15G/30G,,,,,,Normal
+Agates,"Basic Treasure
+",2+,5G/15G/30G,,,,,,Normal
+Opals,"Basic Treasure
+","2+
+",5G/15G/30G,,,,,,"Normal
+"
+Porcelain,"Basic Treasure
+",2+,5G/15G/30G,,,,,,Normal
+Dwarven Whiskey,"Basic Treasure
+",2+,5G/15G/30G,,,,,,Normal
+Fine Wine,"Basic Treasure
+",2+,5G/15G/30G,,,,,,Normal
+Mechanical Curios,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
+Runic Tomes,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
+Halfling Herbs,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
+Elven Etchings,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
+Lesser Mana Crystals,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
+"Glassware
+",Basic Treasure,2+,5G/15G/30G,,,,,,Normal
+Amber,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
+Minor Relics,Basic Treasure,3+,5G/15G/30G,,,,,,Normal
+Curious Statuary,Basic Treasure,3+,5G/15G/30G,,,,,,Normal
+Trade Beads,Basic Treasure,4+,5G/15G/30G,,,,,,Normal
+Crude Reagents,Basic Treasure,4+,5G/15G/30G,,,,,,Normal
+Gold,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Major Relics,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Refined Reagents,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Rubies,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Sapphires,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Emeralds,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Pearls,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Ancient Lore,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Oil Paintings,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Greater Mana Crystals,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
+Aged Spirits,Splendid Treasure,3+,10G/20G/40G,,,,,,Normal
+"Yellow Diamonds
+",Splendid Treasure,"4+
+",10G/20G/40G,,,,,,Normal
+Mithril,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
+Platinum,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
+Blue Diamonds,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
+Deep Iron,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
+Star Jewels,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
+Sovereign Mana Crystals,Astonishing Treasure,3+,15G/25G/50G,,,,,,Normal
+Magic Resistance Potion,"Item
+",2+,Discard to avoid 3 MY (1 and 2)/5 MY (3). Upgrade for 15. Sell for 20/30.,,,,,,Normal
+Magic Resistance Potion,Item,2+,Discard to avoid 3 MY (1 and 2)/5 MY (3). Upgrade for 15. Sell for 20/30.,,,,,,Normal
+Philter of Bravery,Item,2+,Discard to avoid 2 MA (1)/4 MA (2 and 3). Upgrade for 10. Sell for 20/30,,,,,,Normal
+Philter of Bravery,Item,2+,Discard to avoid 2 MA (1)/4 MA (2 and 3). Upgrade for 10. Sell for 20/30,,,,,,Normal
+Barrel Charge,Item,2+,Discard to avoid 2 ST (1)/4 ST (2 and 3). Upgrade for 10. Sell for 20/30,,,,,,Normal
+Barrel Charge,Item,2+,Discard to avoid 2 ST (1)/4 ST (2 and 3). Upgrade for 10. Sell for 20/30,,,,,,Normal
+Luminant Flare,Item,2+,Discard to avoid 2 EN (1 and 2)/3 EN (3). Upgrade for 15. Sell for 20/30,,,,,,Normal
+Luminant Flare,Item,2+,Discard to avoid 2 EN (1 and 2)/3 EN (3). Upgrade for 15. Sell for 20/30,,,,,,Normal
+Scouting Bat,Item,2+,"Look at the top 8 (1 and 2)/16 (3) cards of the expedition deck, re-arrange them in any order. Sell for 20/30",,,,,,Normal
+Scouting Bat,Item,2+,"Look at the top 8 (1 and 2)/16 (3) cards of the expedition deck, re-arrange them in any order. Sell for 20/30",,,,,,Normal
+Scouting Bat,Item,3+,"Look at the top 8 (1 and 2)/16 (3) cards of the expedition deck, re-arrange them in any order. Sell for 20/30",,,,,,Normal
+Alarm Automaton,Item,2+,Shuffle the expedition deck. Sell for 40,,,,,,Normal
+Gelatinous Polyhedra,Hazard,2+,2/3/5 MA,,,,,,Normal
+Reanimated Dead,Hazard,2+,1/2/3 MA 1/2/3 MY,,,,,,Normal
+Poltergeist Activity,Hazard,2+,2/3/5 MY,,,,,,Normal
+Runic Defences,Hazard,2+,1/2/3 MY 1/2/3 ST,,,,,,Normal
+Summoning Circle,Hazard,2+,2/3/5 MY 1/2/3 MA,,,,,,Normal
+Unstable Reagents,Hazard,2+,1/2/3 MY 1/2/3 EN,,,,,,Normal
+Rogue Automatons,Hazard,4+,1/2/3 EN 1/2/3 MA,,,,,,Normal
+Survivalist Traps,Hazard,2+,2/4/6 EN,,,,,,Normal
+Goblin Freebooters,Hazard,2+,1/2/3 MA,,,,,,Normal
+Crumbling Hallway,Hazard,2+,1/2/3 ST,,,,,,Normal
+Treacherous Stairs,Hazard,2+,1/2/4 ST,,,,,,Normal
+Perilous Workings,Hazard,2+,1/2/3 ST,,,,,,Normal
+Bottomless Pit,Hazard,2+,1/2/3 EN,,,,,,Normal
+Choking Miasma,Hazard,2+,1/2/4 EN,,,,,,Normal
+Flooded Chambers,Hazard,2+,1/2/3 EN,,,,,,Normal
+Exposed Machinery,Hazard,2+,1/2/3 EN 1/2/2 ST,,,,,,Normal
+Mutated Vermin,Hazard,3+,1/2/3 MY 1/2/3 MA,,,,,,Normal
+Vengeful Spirits,Hazard,4+,2/3/5 MY 1/2/2 MA,,,,,,Normal
+Horrifying Tentacle,Hazard,2+,1/2/3 MY 2/3/4 MA,,,,,,Normal
+The Living Darkness,Hazard,2+,2/3/4 MY 2/3/4 MA,,2MY/2MA,3MY/3MA,4MY/4MA,,Normal
+The Axe of Fhaldun,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+The Helm of Ghrond,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+The Emerald Gauntlets,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+The Book of Judgements,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+The Boots of Nazkhan,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+The Jewel of the Deeps,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+The Old Crown,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+The Doom Hammer,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+The Robes of Bhazz,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
+"The Darkness Hungers!
+",Special,2+,"The Darkness Approaches.../The Darkness Hungers!
+",,,,,,Double-sided Foil
+Mission from the Queen 1,Mission,2+,Retrieve the the Axe of Fhaldun and the Helm of Ghrond,,,,,,Mission
+Mission from the Queen 2,Mission,2+,Retrieve the Helm of Ghrond and the Emerald Gauntlets,,,,,,Mission
+Mission from the Queen 3,Mission,2+,Retrieve the Emerald Gauntlets and the Book of Judgements,,,,,,Mission
+Mission from the Queen 4,Mission,2+,Retrieve the Book of Judgements and the Boots of Nazkhan,,,,,,Mission
+Mission from the Queen 5,Mission,2+,Retrieve the Boots of Nazkhan and the Jewel of the Deeps,,,,,,Mission
+Mission from the Queen 6,Mission,2+,Retrieve the Jewel of the Deeps and the Old Crown,,,,,,Mission
+Mission from the Queen 7,Mission,2+,Retrieve the Old Crown and the Doom Hammer,,,,,,Mission
+Mission from the Queen 8,Mission,2+,Retrieve the Doom Hammer and the Robes of Bhazz,,,,,,Mission
+Mission from the Queen 9,Mission,2+,Retriever the Robes of Bhazz and the Helm of Ghrond,,,,,,Mission
+Mission from the Queen 10,Mission,2+,Defeat a Gelatinous Polyhedra and return it to the surface,,,,,,Mission
+Mission from the Queen 11,Mission,2+,Defeat Mutated Vermin and return them to the surface,,,,,,Mission
+Mission from the Queen 12,Mission,2+,Defeat Reanimated Dead and return them to the surface,,,,,,Mission
+Mission from the Queen 13,Mission,2+,Defeat Horrifying Tentacles and return them to the surface,,,,,,Mission
+Mission from the Queen 14,Mission,2+,Retrieve 5 Basic Treasures in one Delve,,,,,,Mission
+Mission from the Queen 15,Mission,2+,Retrieve 3 Splendid Treasures in one Delve,,,,,,Mission
+Mission from the Queen 16,Mission,2+,Retrieve 1 Astonishing Treasure in one Delve,,,,,,Mission
+Mission from the Queen 17,Mission,2+,Retrieve any 3 artifacts,,,,,,Mission
+Mission from the Queen 18,Mission,2+,Survive an Encounter with The Living Darkness,,,,,,Mission
+Delve Indicator Card,Special,2+,First Delve/Second Delve/Third Delve,,,,,,"Double-sided
+"
+Loan Shark,Special,2+,(TBD),,,,,,Double-sided
+ 'Lucky' Dhorzan,Expedition Leader,2+,Can avoid one of any hazard,N,,,,,Leader
+Lady Minewater,Expedition Leader,2+,Starts with an extra 10G (and thus always goes first),N,,,,,Leader
+Thorgi Silvertongue,Expedition Leader,2+,All adventurers (including peons) cost 2G less to hire initially (does not affect buyout price),N,,,,,Leader
+Runecaller Svadi,Expedition Leader,2+,One free VOID of a stack of any size per delve,N,,,,,Leader
+Ulgrim the Auctioneer,Expedition Leader,2+,Earns a bonus of 20 G on each sold artifact,N,,,,,Leader
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Peon,Peon,2+,"Can carry 2 treasures when uninjured, 1 treasure when injured, costs 15 G",N,,,,15,Normal
+Clairvoyant,Basic Adventurer,2+,"You may void 2 card stacks for free, costs 15 G",N,,,,15,Normal
+Accountant,Basic Adventurer,2+,"Adventurers and Peons cost One G less to hire each, STEADFAST costs 20 G",S,,,,20,Normal
+Quartermaster,Basic Adventurer,2+,"Carries 1 extra treasure, costs 20 G",N,,,,20,Normal
+Fence,Basic Adventurer,2+,"Each treasure returned to the surface is worth an extra 5, 10 or 15 G, MERCENARY, costs 20 G",M,,,,20,Normal
+Paladin,Basic Adventurer,2+,Can absorb one point of hazard damage per turn without taking damage. STEADFAST Costs 20 G,S,,,,20,Normal
+Medic,Basic Adventurer,2+,"Can heal adventurers or peons for the cost of 5 G, Costs 20 G",N,,,,20,Normal
+Opportunist,Basic Adventurer,2+,Can pick up one treasure during the escape,M,,,,15,Normal
+Archaeologist,Basic Adventurer,2+,"Can carry one artifact in addition to a treasure, cost is halved if you have an artifact",N,,,,20,Normal
+Bowdwarf,Basic Adventurer,2+,Avoids one MARTIAL hazard,S,,,,25,Normal
+Swordsdwarf,Basic Adventurer,2+,Avoids one MARTIAL hazard,M,,,,20,Normal
+Pistolier,Basic Adventurer,2+,Avoids up to two MARTIAL hazard,N,,,,40,Normal
+Sapper,Basic Adventurer,2+,Avoids one STRUCTURAL hazard,M,,,,20,Normal
+Miner,Basic Adventurer,2+,Avoids one STRUCTURAL hazard,S,,,,25,Normal
+Engineer,Basic Adventurer,2+,"Avoids up to two STRUCTURAL hazard, Costs 40 G",N,,,,40,Normal
+Dowser,Basic Adventurer,2+,"Avoids one ENVIRONMENTAL hazard, STEADFAST, costs 25 G",S,,,,25,Normal
+Thief,Basic Adventurer,2+,"Avoids one ENVIRONMENTAL hazard, MERCENARY, costs 20 G",M,,,,20,Normal
+Cartographer,Basic Adventurer,2+,"Avoids up to two ENVIRONMENTAL hazard, costs 40 G",N,,,,40,Normal
+Runesmith,Basic Adventurer,2+,"Avoids one MYSTICAL hazard, STEADFAST, costs 25 G",S,,,,25,Normal
+Mage,Basic Adventurer,2+,"Avoids one MYSTICAL hazard, MERCENARY, costs 20 G",M,,,,20,Normal
+Arcanist,Basic Adventurer,2+,"Avoids up to two MYSTICAL hazard, costs 40 G",N,,,,40,Normal
+Architect,Advanced Adventurer,2+,"Avoids up to three STRUCTURAL hazard, STEADFAST, costs 50 G",S,,,,50,Normal
+Archmage,Advanced Adventurer,2+,"Avoids up to three MYSTICAL hazard, STEADFAST, costs 50 G",S,,,,50,Normal
+Deep Ranger,Advanced Adventurer,2+,"Avoids up to three ENVIRONMENTAL hazard, STEADFAST, costs 50 G",S,,,,50,Normal
+Musketeer,Advanced Adventurer,2+,"Avoids up to three MARTIAL hazard, STEADFAST, costs 50 G",S,,,,50,Normal
+Jack of All Trades,Advanced Adventurer,2+,"Avoids two of any type of hazard, carries an extra treasure, MERCENARY, costs 50 G",M,,,,50,Normal
+Merchant Princess,Advanced Adventurer,2+,"Each treasure returned to the surface is worth an extra 10, 20 or 30 gold (depending on the depth). MERCENARY Costs 50 G",M,,,,50,Normal
+Runelorist,Advanced Adventurer,2+,"Can carry two Artifacts in addition to treasure, Costs 50 G",N,,,,50,Normal
+Fateweaver,Advanced Adventurer,2+,"Can void 3 card stacks for free, Costs 50 G",N,,,,50,Normal
+Necromancer,Advanced Adventurer,2+,Can bring fallen adventuers back to life for 10 G each. Can  avoid all hazards from a Ghost once per delve. Costs 50 G.,N,,,,50,Normal
+The Bastard Elf,Advanced Adventurer,2+,"During the escape phase, steal one treasure/artefact from an opposing team and carry it to the surface. Take MARTIAL hazard equal to the number of adventurers fought.",M,,,,60,Normal
