@@ -1,69 +1,69 @@
 "Dusty Rooms
-",Null,2+,-0,,,,,,"Normal
+",Null,2+,,,,,,,"Normal
 "
 "Dusty Rooms
-",Null,2+,-0,,,,,,"Normal
+",Null,2+,,,,,,,"Normal
 "
-Creaking Hallway,Null,2+,-0,,,,,,"Normal
+Creaking Hallway,Null,2+,,,,,,,"Normal
 "
-Creaking Hallway,Null,2+,-0,,,,,,"Normal
+Creaking Hallway,Null,2+,,,,,,,"Normal
 "
-Silent Stairway,Null,2+,-0,,,,,,"Normal
+Silent Stairway,Null,2+,,,,,,,"Normal
 "
-Silent Stairway,Null,2+,-0,,,,,,"Normal
+Silent Stairway,Null,2+,,,,,,,"Normal
 "
-Dripping Chasm,Null,2+,-0,,,,,,"Normal
+Dripping Chasm,Null,2+,,,,,,,"Normal
 "
-Dripping Chasm,Null,2+,-0,,,,,,"Normal
+Dripping Chasm,Null,2+,,,,,,,"Normal
 "
-Echoing Shaft,Null,2+,-0,,,,,,"Normal
+Echoing Shaft,Null,2+,,,,,,,"Normal
 "
-Echoing Shaft,Null,2+,-0,,,,,,"Normal
+Echoing Shaft,Null,2+,,,,,,,"Normal
 "
-Abandoned Workshops,Null,2+,-0,,,,,,Normal
-Abandoned Workshops,Null,2+,-0,,,,,,Normal
-Empty Storerooms,Null,2+,-0,,,,,,Normal
-Empty Storerooms,Null,2+,-0,,,,,,Normal
-Collapsed Tunnel,Null,3+,-0,,,,,,Normal
-Tumbled Stairs,Null,3+,-0,,,,,,Normal
-Welded Doorway,Null,4+,-0,,,,,,Normal
+Abandoned Workshops,Null,2+,,,,,,,Normal
+Abandoned Workshops,Null,2+,,,,,,,Normal
+Empty Storerooms,Null,2+,,,,,,,Normal
+Empty Storerooms,Null,2+,,,,,,,Normal
+Collapsed Tunnel,Null,3+,,,,,,,Normal
+Tumbled Stairs,Null,3+,,,,,,,Normal
+Welded Doorway,Null,4+,,,,,,,Normal
 Hastily Filled Pit,Null,"4+
-",-0,,,,,,Normal
+",,,,,,,Normal
 Sealed Airshaft,"Null
-",4+,-0,,,,,,Normal
+",4+,,,,,,,Normal
 Nailed Hatchway,"Null
-",4+,-0,,,,,,Normal
-Looted Tavern,Null,2+,-0,,,,,,Normal
-Empty Crypt,Null,2+,-0,,,,,,Normal
+",4+,,,,,,,Normal
+Looted Tavern,Null,2+,,,,,,,Normal
+Empty Crypt,Null,2+,,,,,,,Normal
 Silver Bars,"Basic Treasure
-",2+,5G/15G/30G,,,,,,Normal
+",2+,5G/15G/30G,,5,15,30,,Normal
 "Minted Coins
 ","Basic Treasure
-",2+,5G/15G/30G,,,,,,Normal
+",2+,5G/15G/30G,,5,15,30,,Normal
 Agates,"Basic Treasure
-",2+,5G/15G/30G,,,,,,Normal
+",2+,5G/15G/30G,,5,15,30,,Normal
 Opals,"Basic Treasure
 ","2+
-",5G/15G/30G,,,,,,"Normal
+",5G/15G/30G,,5,15,30,,"Normal
 "
 Porcelain,"Basic Treasure
-",2+,5G/15G/30G,,,,,,Normal
+",2+,5G/15G/30G,,5,15,30,,Normal
 Dwarven Whiskey,"Basic Treasure
-",2+,5G/15G/30G,,,,,,Normal
+",2+,5G/15G/30G,,5,15,30,,Normal
 Fine Wine,"Basic Treasure
-",2+,5G/15G/30G,,,,,,Normal
-Mechanical Curios,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
-Runic Tomes,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
-Halfling Herbs,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
-Elven Etchings,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
-Lesser Mana Crystals,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
+",2+,5G/15G/30G,,5,15,30,,Normal
+Mechanical Curios,Basic Treasure,2+,5G/15G/30G,,5,15,30,,Normal
+Runic Tomes,Basic Treasure,2+,5G/15G/30G,,5,15,30,,Normal
+Halfling Herbs,Basic Treasure,2+,5G/15G/30G,,5,15,30,,Normal
+Elven Etchings,Basic Treasure,2+,5G/15G/30G,,5,15,30,,Normal
+Lesser Mana Crystals,Basic Treasure,2+,5G/15G/30G,,5,15,30,,Normal
 "Glassware
-",Basic Treasure,2+,5G/15G/30G,,,,,,Normal
-Amber,Basic Treasure,2+,5G/15G/30G,,,,,,Normal
-Minor Relics,Basic Treasure,3+,5G/15G/30G,,,,,,Normal
-Curious Statuary,Basic Treasure,3+,5G/15G/30G,,,,,,Normal
-Trade Beads,Basic Treasure,4+,5G/15G/30G,,,,,,Normal
-Crude Reagents,Basic Treasure,4+,5G/15G/30G,,,,,,Normal
+",Basic Treasure,2+,5G/15G/30G,,5,15,30,,Normal
+Amber,Basic Treasure,2+,5G/15G/30G,,5,15,30,,Normal
+Minor Relics,Basic Treasure,3+,5G/15G/30G,,5,15,30,,Normal
+Curious Statuary,Basic Treasure,3+,5G/15G/30G,,5,15,30,,Normal
+Trade Beads,Basic Treasure,4+,5G/15G/30G,,5,15,30,,Normal
+Crude Reagents,Basic Treasure,4+,5G/15G/30G,,5,15,30,,Normal
 Gold,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
 Major Relics,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
 Refined Reagents,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
@@ -199,4 +199,4 @@ Merchant Princess,Advanced Adventurer,2+,"Each treasure returned to the surface 
 Runelorist,Advanced Adventurer,2+,"Can carry two Artifacts in addition to treasure, Costs 50 G",N,,,,50,Normal
 Fateweaver,Advanced Adventurer,2+,"Can void 3 card stacks for free, Costs 50 G",N,,,,50,Normal
 Necromancer,Advanced Adventurer,2+,Can bring fallen adventuers back to life for 10 G each. Can  avoid all hazards from a Ghost once per delve. Costs 50 G.,N,,,,50,Normal
-The Bastard Elf,Advanced Adventurer,2+,"During the escape phase, steal one treasure/artefact from an opposing team and carry it to the surface. Take MARTIAL hazard equal to the number of adventurers fought.",M,,,,60,Normal
+The Bastard Elf,Advanced Adventurer,2+,"During the escape phase*, steal one treasure/artefact from an opposing team and carry it to the surface. Take MARTIAL hazard equal to the number of adventurers fought.",M,,,,60,Normal
