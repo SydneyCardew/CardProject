@@ -1,1 +1,1 @@
-"# CardProject" 
+This utility is designed as a tool to aid me in the development of my card game 'Too Greedily, Too Deep'. Ultimately it will be able to read values out of a csv file and create an array of images which can be used for rapid prototyping in online board game systems.
