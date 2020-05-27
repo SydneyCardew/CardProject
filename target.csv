@@ -64,26 +64,26 @@ Minor Relics,Basic Treasure,3+,5G/15G/30G,,5,15,30,,Normal
 Curious Statuary,Basic Treasure,3+,5G/15G/30G,,5,15,30,,Normal
 Trade Beads,Basic Treasure,4+,5G/15G/30G,,5,15,30,,Normal
 Crude Reagents,Basic Treasure,4+,5G/15G/30G,,5,15,30,,Normal
-Gold,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Major Relics,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Refined Reagents,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Rubies,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Sapphires,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Emeralds,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Pearls,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Ancient Lore,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Oil Paintings,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Greater Mana Crystals,Splendid Treasure,2+,10G/20G/40G,,,,,,Normal
-Aged Spirits,Splendid Treasure,3+,10G/20G/40G,,,,,,Normal
+Gold,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Major Relics,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Refined Reagents,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Rubies,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Sapphires,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Emeralds,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Pearls,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Ancient Lore,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Oil Paintings,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Greater Mana Crystals,Splendid Treasure,2+,10G/20G/40G,,10,20,40,,Normal
+Aged Spirits,Splendid Treasure,3+,10G/20G/40G,,10,20,40,,Normal
 "Yellow Diamonds
 ",Splendid Treasure,"4+
-",10G/20G/40G,,,,,,Normal
-Mithril,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
-Platinum,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
-Blue Diamonds,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
-Deep Iron,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
-Star Jewels,Astonishing Treasure,2+,15G/25G/50G,,,,,,Normal
-Sovereign Mana Crystals,Astonishing Treasure,3+,15G/25G/50G,,,,,,Normal
+",10G/20G/40G,,10,20,40,,Normal
+Mithril,Astonishing Treasure,2+,15G/25G/50G,,15,25,50,,Normal
+Platinum,Astonishing Treasure,2+,15G/25G/50G,,15,25,50,,Normal
+Blue Diamonds,Astonishing Treasure,2+,15G/25G/50G,,15,25,50,,Normal
+Deep Iron,Astonishing Treasure,2+,15G/25G/50G,,15,25,50,,Normal
+Star Jewels,Astonishing Treasure,2+,15G/25G/50G,,15,25,50,,Normal
+Sovereign Mana Crystals,Astonishing Treasure,3+,15G/25G/50G,,15,25,50,,Normal
 Magic Resistance Potion,"Item
 ",2+,Discard to avoid 3 MY (1 and 2)/5 MY (3). Upgrade for 15. Sell for 20/30.,,,,,,Normal
 Magic Resistance Potion,Item,2+,Discard to avoid 3 MY (1 and 2)/5 MY (3). Upgrade for 15. Sell for 20/30.,,,,,,Normal
@@ -115,7 +115,7 @@ Flooded Chambers,Hazard,2+,1/2/3 EN,,,,,,Normal
 Exposed Machinery,Hazard,2+,1/2/3 EN 1/2/2 ST,,,,,,Normal
 Mutated Vermin,Hazard,3+,1/2/3 MY 1/2/3 MA,,,,,,Normal
 Vengeful Spirits,Hazard,4+,2/3/5 MY 1/2/2 MA,,,,,,Normal
-Horrifying Tentacle,Hazard,2+,1/2/3 MY 2/3/4 MA,,,,,,Normal
+Horrifying Tentacle,Hazard,2+,1/2/3 MY 2/3/4 MA,,1MY/2MA,2MY/3MA,3MY/4MA,,Normal
 The Living Darkness,Hazard,2+,2/3/4 MY 2/3/4 MA,,2MY/2MA,3MY/3MA,4MY/4MA,,Normal
 The Axe of Fhaldun,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
 The Helm of Ghrond,Artefact ,2+,Worth 100G at the end of the game,,,,,,Normal
