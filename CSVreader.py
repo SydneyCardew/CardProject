@@ -4,6 +4,8 @@
 import csv
 import os
 import errno
+from PIL import Image
+
 operating = True
 # FUNCTIONS
 #-------------------------------------------  
@@ -31,7 +33,7 @@ def readcsv(settings, currentdir): #reads the csv file
     with open(str(settings[1]) + '.csv', newline='') as csvfile: #opens the target filename (value storied in settings[1]
         csvobject = csv.reader(csvfile, dialect='card')  #creates a csv object
         for row in csvobject: #reads over all rows
-            tabledata.append(next(csvobject)) #adds all rows to the 'tabledata' list
+            tabledata.append(row) #adds all rows to the 'tabledata' list
     return tabledata 
 
 def invalid(): # returns the 'invalid command' message
@@ -44,8 +46,9 @@ def helptext(settings): # prints the help text
     print ('Available commands in version ' +str(settings[0]))
     print ("""
     
-READ - reads a CSV file
-MAKE - makes an array of text files from the current data set
+READ - reads a CSV file to the data set
+MAKETXT - makes an array of text files from the current data set
+MAKEIMG - makes an array of image files from the current data set
 VIEW - view the current data set
 SETTINGS - change settings options
 LOAD - Load settings from a file
@@ -65,22 +68,31 @@ def txtmaker(tabledata, filename):
         pass    
     os.chdir(path)
     for x in range (len(tabledata)):
-        f = open((filename) + ' ' + str(x) + '.txt',"w+")
+        f = open((filename) + ' ' + str(x+1) + '.txt',"w+")
+        f.write('card number ' + str(x+1) + '\n')
+        f.write(' ' + '\n')
         for y in range (len(tabledata[x])):
             f.write((tabledata[x][y]) + '\n')
+        f.write(' ' + '\n')
+        f.write((filename) + ' ' + str(x+1) + '.txt')    
         f.close()    
+        
+def imgmaker(tabledata, filename):
+    os.chdir(currentdir)
+    im = Image.new('RGB', (100,100), color=(255,255,255))
+    im.save((filename)+'.png')
         
 def tableviewer(tabledata):     
     print ('length of data is ' +str(len(tabledata))+ ' rows')
     print (' ')
     for x in range (len(tabledata)):
-        print (tabledata[x])
+        print ('row ' +str(x+1) +(tabledata[x]))
         print (' ')
     
 # PROGRAM STARTUP
 #-------------------------------------------  
 print (' ')
-print ('CSV READER (PROTOTYPE) FOR \'TOO GREEDILY, TOO DEEP\'')
+print ('CARD MAKER (PROTOTYPE) FOR \'TOO GREEDILY, TOO DEEP\'')
 print (' ')
 print ('BY SYDNEY CARDEW')
 print (' ')
@@ -128,13 +140,20 @@ while operating:
         elif havetable == True:
             print (' ')
             tableviewer(tabledata)
-    if command == 'MAKE':
+    if command == 'MAKETXT':
         if havetable == False:
             invalid()
         elif havetable == True: 
             print (' ')
             filename = input('Please enter a name for your project: ')
             txtmaker(tabledata,filename)
+    if command == 'MAKEIMG':
+        if havetable == False:
+            invalid()
+        elif havetable == True: 
+            print (' ')
+            filename = input('Please enter a name for your project: ')
+            imgmaker(tabledata,filename)        
     if command == '?' or command == 'HELP':   
         helptext(settings)
             
