@@ -5,6 +5,7 @@ import csv
 import os
 import errno
 from PIL import Image
+from PIL import ImageDraw
 
 operating = True
 # FUNCTIONS
@@ -81,6 +82,7 @@ def imgmaker(tabledata, filename):
     os.chdir(currentdir)
     im = Image.new('RGB', (100,100), color=(255,255,255))
     im.save((filename)+'.png')
+    image.close()
         
 def tableviewer(tabledata):     
     print ('length of data is ' +str(len(tabledata))+ ' rows')
@@ -134,27 +136,27 @@ while operating:
             print(tabledata)
         if showcommand == 'N':
             pass
-    if command == 'VIEW':
+    elif command == 'VIEW':
         if havetable == False:
             invalid()
         elif havetable == True:
             print (' ')
             tableviewer(tabledata)
-    if command == 'MAKETXT':
+    elif command == 'MAKETXT':
         if havetable == False:
             invalid()
         elif havetable == True: 
             print (' ')
             filename = input('Please enter a name for your project: ')
             txtmaker(tabledata,filename)
-    if command == 'MAKEIMG':
+    elif command == 'MAKEIMG':
         if havetable == False:
             invalid()
         elif havetable == True: 
             print (' ')
             filename = input('Please enter a name for your project: ')
             imgmaker(tabledata,filename)        
-    if command == '?' or command == 'HELP':   
+    elif command == '?' or command == 'HELP':   
         helptext(settings)
             
     

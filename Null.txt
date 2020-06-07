@@ -1,0 +1,12 @@
+###This is a layout file for Card Sharp. Refer to 'layout.txt' for an explanation.
++++SIZE 300 400,BORDER 25,BACKGROUND 250 250 250,VERTICALSPACE 30
+***
+C~0
+***
+C~~1
+***
+***
+***
+***
+C~~~NUM
+>~~3
