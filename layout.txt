@@ -1,0 +1,13 @@
+CARD SHARP LAYOUT FILES
+
+Basic markup:
+
+### Lines beginning with three '#', such as this line, are interpreted as comments, and ignored.
++++ Lines beginning with three '+', such as this line, are interpreted as 'rules', definining overall parameters of the card. The rules are:
+SIZE [x] [y]
+BORDER [x]
+BACKGROUND [x] [y] [z]
+VERTICALSPACE [x]
+
+*** creates a blank space
+HR creates a horizontal rule
