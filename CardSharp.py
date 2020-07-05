@@ -299,6 +299,9 @@ path = path + ' ' + today + ' ' + str(increment)
 if args.debug:
     tableviewer(tabledata,csvname)
 if args.text:
+    bl()
+    print ('Card Sharp is creating ' + str(len(tabledata)) + ' txt files in ' +(path)+ ' from ' +(csvname)+ '.csv')
+    bl()
     txtmaker(tabledata,filename,path)
     filelist = os.listdir(path)
     if len(filelist) == len(tabledata):
