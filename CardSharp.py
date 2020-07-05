@@ -110,6 +110,7 @@ def imgmaker(tabledata, filename,path,configseg):  # reads the rules and coordin
         os.chdir(currentdir)
 
 def lineprint(linestructure, downcursor, textset, cardno, d,configseg):
+    os.chdir(currentdir)
     config = configparser.ConfigParser()
     config.read('Settings/config.ini')
     smallfontid = config[(configseg)]['smallfontid']
@@ -194,8 +195,7 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg):
         downcursor = downcursor + textheightx
     return downcursor
 
-def ruleparser(rulestemp,
-               tabledata):  # this function turns the data from the template into instructions for the lineprint function
+def ruleparser(rulestemp,tabledata):  # this function turns the data from the template into instructions for the lineprint function
     rulemod = 0  # this variable allows interpretation of lines with different lengths, for example smaller and larger font sizes, inversions etc.
     if rulestemp[0] == 'C':
         if rulestemp[1] == 'I':
