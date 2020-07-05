@@ -128,15 +128,15 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg):
     blue = config[(configseg)]['blue']
     yellow = config[(configseg)]['yellow']
     if linestructure[3] == 'black':
-        rvalue, gvalue, bvalue, = int(black[0:2]), int(black[4:6]), int(black[8:10])
+        rvalue, gvalue, bvalue, = int(black[0:3]), int(black[4:7]), int(black[8:11])
     elif linestructure[3] == 'red':
-        rvalue, gvalue, bvalue, = int(red[0:2]), int(red[4:6]), int(red[8:10])
+        rvalue, gvalue, bvalue, = int(red[0:3]), int(red[4:7]), int(red[8:11])
     elif linestructure[3] == 'green':
-        rvalue, gvalue, bvalue, = int(green[0:2]), int(green[4:6]), int(green[8:10])
+        rvalue, gvalue, bvalue, = int(green[0:3]), int(green[4:7]), int(green[8:11])
     elif linestructure[3] == 'blue':
-        rvalue, gvalue, bvalue, = int(blue[0:2]), int(blue[4:6]), int(blue[8:10])
+        rvalue, gvalue, bvalue, = int(blue[0:3]), int(blue[4:7]), int(blue[8:11])
     elif linestructure[3] == 'yellow':
-        rvalue, gvalue, bvalue, = int(yellow[0:2]), int(yellow[4:6]), int(yellow[8:10])
+        rvalue, gvalue, bvalue, = int(yellow[0:3]), int(yellow[4:7]), int(yellow[8:11])
     if linestructure[0] == 'BLANK':
         downcursor = downcursor + textset[1]
     elif linestructure[0] == 'HLINE':
@@ -233,7 +233,6 @@ def ruleparser(rulestemp,tabledata):  # this function turns the data from the te
         alignment = 'HLINE'
         setfont = 'HLINE'
         linetext = 'HLINE'
-        linecolour = 'black'
     if rulestemp[1 + rulemod] == '~' and rulestemp[2 + rulemod] != '~':
         setfont = '1'
     elif rulestemp[1 + rulemod] == '~' and rulestemp[2 + rulemod] == '~' and rulestemp[3 + rulemod] != '~':
