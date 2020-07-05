@@ -167,4 +167,4 @@ Merchant Princess,Advanced Adventurer,2+,Each treasure returned to the surface, 
 Runelorist,Advanced Adventurer,2+,Can carry two Artifacts,in addition to treasure,,,NEUTRAL,50G,Normal,Adventurer
 Fateweaver,Advanced Adventurer,2+,Can void 3 card stacks for free,,,,NEUTRAL,50G,Normal,Adventurer
 Necromancer,Advanced Adventurer,2+,Can bring fallen adventuers back to life, for 10 G each. Can  avoid all hazards,from a Ghost once per delve.,,NEUTRAL,50G,Normal,Adventurer
-The Bastard Elf,Advanced Adventurer,2+,"During the escape phase, steal one loot ",from an opposing team. Take MA hazard ,equal to the number of adventurers fought.,,MERCENARY,60G,Normal,Adventurer
+The Bastard Elf,Advanced Adventurer,2+,During the escape phase, steal one loot from an opposing team., Take MA hazard equal to the number, of adventurers fought.,MERCENARY,60G,Normal,Adventurer
