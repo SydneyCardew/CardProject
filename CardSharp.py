@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# INITIALISATIONS
+# IMPORTS
 #-------------------------------------------  
 import csv
 import os
@@ -9,21 +9,12 @@ import configparser
 from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
+
 #CLASSES
 #---------------------------------------------------------------
 class TransposedFont:
-    "Wrapper for writing rotated or mirrored text"
 
     def __init__(self, font, orientation=None):
-        """
-        Wrapper that creates a transposed font from any existing font
-        object.
-
-        :param font: A font object.
-        :param orientation: An optional orientation.  If given, this should
-            be one of Image.FLIP_LEFT_RIGHT, Image.FLIP_TOP_BOTTOM,
-            Image.ROTATE_90, Image.ROTATE_180, or Image.ROTATE_270.
-        """
         self.font = font
         self.orientation = orientation  # any 'transpose' argument, or None
 
@@ -44,14 +35,14 @@ class TransposedFont:
 def readcsv(csvname, currentdir): #reads the csv file
     os.chdir(currentdir) #moves to the main directory
     tabledata = [] #initialises the 'tabledata' list
-    csv.register_dialect('card',delimiter=",", escapechar="*",  quoting=csv.QUOTE_NONE) #creates a csv dialect that seperates fiels on commas and uses * as an escape character
+    csv.register_dialect('card',delimiter=",", escapechar="*",  quoting=csv.QUOTE_NONE) #creates a csv dialect that seperates files on commas and uses * as an escape character
     with open(str(csvname) + '.csv', newline='') as csvfile: #opens the target filename (value storied in settings[1]
         csvobject = csv.reader(csvfile, dialect='card')  #creates a csv object
         for row in csvobject: #reads over all rows
             tabledata.append(row) #adds all rows to the 'tabledata' list
     return tabledata 
 
-def txtmaker(tabledata, filename):
+def txtmaker(tabledata, filename): # function that makes text files out of the table data
     pathmod = "\Output\\" + (filename)
     path = currentdir + pathmod
     try:
@@ -257,7 +248,9 @@ group.add_argument("-i", "--image", action='store_true', help = "produces image 
 parser.add_argument('--version', action='version',version='%(prog)s 0.2.0')
 args = parser.parse_args()
 csvname = args.CSV
-currentdir = os.getcwd() # retrieves the current directory in which the CSVreader.py script is running 
+currentdir = os.getcwd() # retrieves the current directory in which the CSVreader.py script is running
+config = configparser.ConfigParser()
+config.read('Settings/config.ini')
 filename = 'test'
 if args.debug:
     debug = True
@@ -265,7 +258,7 @@ else:
     debug = False
 tabledata = readcsv(csvname, currentdir)
 if debug == True:
-    print (tabledata)
+    tableviewer(tabledata)
 if args.text:
     txtmaker(tabledata,filename)
 elif args.image:

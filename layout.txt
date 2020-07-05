@@ -11,3 +11,31 @@ VERTICALSPACE [x]
 
 *** creates a blank space
 HR creates a horizontal rule
+
+Lines that print data from the table are in the format:
+
+[ALIGNMENT] [FONT SIZE] [COLOUR*] [TABLE ENTRY]
+
+* optional
+
+Allowed alignments are:
+
+C
+
+CI
+
+<
+
+>
+
+V
+
+V>
+
+V<
+
+^
+
+^<
+
+^>
