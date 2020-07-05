@@ -93,7 +93,7 @@ def imgmaker(tabledata, filename,path,configseg):  # reads the rules and coordin
         d = ImageDraw.Draw(im)
         textset = [border, vspace, width, height]
         downcursor = border
-        for y in range(len(rulelist)):
+        for y in range(len(rulelist)): # draws the card line by line
             rulestemp = list(rulelist[y])
             linestructure = ruleparser(rulestemp, tabledata[w])
             downcursor = lineprint(linestructure, downcursor, textset, w, d,configseg)
@@ -104,14 +104,14 @@ def imgmaker(tabledata, filename,path,configseg):  # reads the rules and coordin
                 raise
             pass
         os.chdir(path)
-        decrement = len(str(len(tabledata))) - len(str(w + 1))
+        decrement = len(str(len(tabledata))) - len(str(w + 1)) # adds padding to the numbers so that all the file names will be the same length
         im.save((filename) + ' ' + '0' * decrement + str(w + 1) + '.png')  # saves a file with the appropriate number
         im.close()
         os.chdir(currentdir)
 
-def lineprint(linestructure, downcursor, textset, cardno, d,configseg):
+def lineprint(linestructure, downcursor, textset, cardno, d,configseg): #this routine prints each individual line according to the data sent to it by ruleparser
     os.chdir(currentdir)
-    config = configparser.ConfigParser()
+    config = configparser.ConfigParser() # the following lines extract the text settings from the config file
     config.read('Settings/config.ini')
     smallfontid = config[(configseg)]['smallfontid']
     smallfontsize = config[(configseg)]['smallfontsize']
@@ -127,7 +127,7 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg):
     green = config[(configseg)]['green']
     blue = config[(configseg)]['blue']
     yellow = config[(configseg)]['yellow']
-    if linestructure[3] == 'black':
+    if linestructure[3] == 'black': # the following if/elif statements set the colour
         rvalue, gvalue, bvalue, = int(black[0:3]), int(black[4:7]), int(black[8:11])
     elif linestructure[3] == 'red':
         rvalue, gvalue, bvalue, = int(red[0:3]), int(red[4:7]), int(red[8:11])
@@ -139,7 +139,7 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg):
         rvalue, gvalue, bvalue, = int(yellow[0:3]), int(yellow[4:7]), int(yellow[8:11])
     if linestructure[0] == 'BLANK':
         downcursor = downcursor + textset[1]
-    elif linestructure[0] == 'HLINE':
+    elif linestructure[0] == 'HLINE': # draws a horizontal rule
         padding = textset[2] - textset[0]
         d.line([(textset[0], downcursor - 5), (padding, downcursor - 5)], fill=(rvalue, gvalue, bvalue), width=2)
     else:
@@ -149,9 +149,9 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg):
             curfnt = biggerfnt
         elif linestructure[1] == '3':
             curfnt = smallfnt
-        textwidth, textheightfull = d.textsize(linestructure[2], font=curfnt)
-        junkwidth, textheightx = d.textsize('x', font=curfnt)
-        if linestructure[0] == 'center':
+        textwidth, textheightfull = d.textsize(linestructure[2], font=curfnt) #gets the absolute height and width of the text
+        junkwidth, textheightx = d.textsize('x', font=curfnt) #gets the x-height of the text
+        if linestructure[0] == 'center': #the following if/elif statements deal with the alignment
             padding = textset[2] - textwidth
             padding = padding // 2
             downpos = downcursor
@@ -191,8 +191,8 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg):
             d.text((padding, downpos), "Card number " + '0' * decrement + str(cardno + 1), font=curfnt,
                    fill=(rvalue, gvalue, bvalue))
         else:
-            d.text((padding, downpos), linestructure[2], font=curfnt, align="center", fill=(rvalue, gvalue, bvalue))
-        downcursor = downcursor + textheightx
+            d.text((padding, downpos), linestructure[2], font=curfnt, align="center", fill=(rvalue, gvalue, bvalue)) #this line prints the lines of text
+        downcursor = downcursor + textheightx # this moves the cursor down the image
     return downcursor
 
 def ruleparser(rulestemp,tabledata):  # this function turns the data from the template into instructions for the lineprint function
@@ -200,7 +200,7 @@ def ruleparser(rulestemp,tabledata):  # this function turns the data from the te
     if rulestemp[0] == 'C':
         if rulestemp[1] == 'I':
             alignment = 'center inverse'
-            rulemod = rulemod + 1
+            rulemod += 1
         else:
             alignment = 'center'
     elif rulestemp[0] == '<':
@@ -210,19 +210,19 @@ def ruleparser(rulestemp,tabledata):  # this function turns the data from the te
     elif rulestemp[0] == 'V':
         if rulestemp[1] == '<':
             alignment = 'bottomleft'
-            rulemod = rulemod + 1
+            rulemod += 1
         if rulestemp[1] == '>':
             alignment = 'bottomright'
-            rulemod = rulemod + 1
+            rulemod += 1
         else:
             alignment = 'bottom'
     elif rulestemp[0] == '^':
         if rulestemp[1] == '<':
             alignment = 'topleft'
-            rulemod = rulemod + 1
+            rulemod += 1
         if rulestemp[1] == '>':
             alignment = 'topright'
-            rulemod = rulemod + 1
+            rulemod += 1
         else:
             alignment = 'top'
     elif rulestemp[0] == '*':
@@ -277,7 +277,7 @@ parser.add_argument("-u", "--user", action='store_true', help = "uses user-defin
 group = parser.add_mutually_exclusive_group()
 group.add_argument("-t", "--text", action='store_true', help = "produces text output")
 group.add_argument("-i", "--image", action='store_true', help = "produces image output")
-parser.add_argument("-v","--version", action='version',version='%(prog)s 0.5.0')
+parser.add_argument("-v","--version", action='version',version='%(prog)s 1.0.0')
 args = parser.parse_args()
 csvname = args.CSV
 currentdir = os.getcwd() # retrieves the current directory in which the CardSharp.py script is running
@@ -289,13 +289,12 @@ else:
 config.read('Settings/config.ini')
 filename = config[(configseg)]['output']
 tabledata = readcsv(csvname, currentdir)
-pathmod = "\Output\\" + (filename)
-path = currentdir + pathmod
 today = str(date.today())
+path = currentdir + "\Output\\" + (filename) #Creates the root of the output directory path
 increment = 0
 while os.path.exists((path) + ' ' + (today) + ' ' + str(increment)):
     increment += 1
-path = path + ' ' + today + ' ' + str(increment)
+path = path + ' ' + today + ' ' + str(increment) #Adds todays date and an increment number to the output directory path
 if args.debug:
     tableviewer(tabledata,csvname)
 if args.text:
