@@ -11,10 +11,11 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 from datetime import date
+from datetime import datetime
 
 #CLASSES
 #---------------------------------------------------------------
-class TransposedFont:
+class TransposedFont: #from PIL, used to create upside down text
 
     def __init__(self, font, orientation=None):
         self.font = font
@@ -93,13 +94,16 @@ def imgmaker(tabledata, filename,path,configseg):  # reads the rules and coordin
         d = ImageDraw.Draw(im)
         textset = [border, vspace, width, height]
         downcursor = border
+        if args.debug: #creates a neat seperator between each card's data in the log file
+            log.write('-------' + '\n')
+            log.write(' ' + '\n')
         for y in range(len(rulelist)): # draws the card line by line
-            rulestemp = list(rulelist[y])
+            rulestemp = list(rulelist[y]) #pulls each line from the rules one by one
             linestructure = ruleparser(rulestemp, tabledata[w])
             downcursor = lineprint(linestructure, downcursor, textset, w, d,configseg)
         try:
             os.makedirs(path)
-        except OSError as exc:
+        except OSError as exc: #handles the error if the directory already exists
             if exc.errno != errno.EEXIST:
                 raise
             pass
@@ -151,13 +155,11 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg): #this ro
             curfnt = smallfnt
         textwidth, textheightfull = d.textsize(linestructure[2], font=curfnt) #gets the absolute height and width of the text
         junkwidth, textheightx = d.textsize('x', font=curfnt) #gets the x-height of the text
-        if linestructure[0] == 'center': #the following if/elif statements deal with the alignment
-            padding = textset[2] - textwidth
-            padding = padding // 2
+        if linestructure[0] == 'center': #the following if/elif statements deal with the alignment. textset[0] is the border, [2] the total width of the image, [3] the total height
+            padding = (textset[2] - textwidth) // 2
             downpos = downcursor
         elif linestructure[0] == 'center inverse':
-            padding = textset[2] - textwidth
-            padding = padding // 2
+            padding = (textset[2] - textwidth) // 2
             downpos = downcursor
             curfnt = TransposedFont(font=curfnt, orientation=Image.ROTATE_180)
         elif linestructure[0] == 'left':
@@ -173,12 +175,10 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg): #this ro
             padding = (textset[2] - textwidth) - textset[0]
             downpos = (textset[3] - textset[0]) - textheightx
         elif linestructure[0] == 'bottom':
-            padding = textset[2] - textwidth
-            padding = padding // 2
+            padding = (textset[2] - textwidth) // 2
             downpos = (textset[3] - textset[0]) - textheightx
         elif linestructure[0] == 'top':
-            padding = textset[2] - textwidth
-            padding = padding // 2
+            padding = (textset[2] - textwidth) // 2
             downpos = textset[0]
         elif linestructure[0] == 'topright':
             padding = (textset[2] - textwidth) - textset[0]
@@ -186,18 +186,24 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg): #this ro
         elif linestructure[0] == 'topleft':
             padding = textset[0]
             downpos = textset[0]
-        if linestructure[2] == 'cardnumber':
+        if linestructure[2] == 'cardnumber': #prints the card number
             decrement = 3 - len(str(cardno + 1))
-            d.text((padding, downpos), "Card number " + '0' * decrement + str(cardno + 1), font=curfnt,
+            d.text((padding, downpos), "Card number " + ('0' * decrement) + str(cardno + 1), font=curfnt,
                    fill=(rvalue, gvalue, bvalue))
-        else:
+            if args.debug: # logs the card number
+                log.write((linestructure[0]) + ' ' + str(rvalue) + ' ' + str(gvalue) + ' ' + str(bvalue) + ' ' + 'Card number ' + ('0' * decrement) + str(cardno+1) + '\n')
+                log.write(' ' + '\n')
+        else: # writes the line
             d.text((padding, downpos), linestructure[2], font=curfnt, align="center", fill=(rvalue, gvalue, bvalue)) #this line prints the lines of text
+            if args.debug: # logs the line
+                log.write((linestructure[0]) + ' ' + str(rvalue) + ' ' + str(gvalue) + ' ' + str(bvalue) + ' ' + str(linestructure[2]) + '\n')
+                log.write(' ' + '\n')
         downcursor = downcursor + textheightx # this moves the cursor down the image
     return downcursor
 
 def ruleparser(rulestemp,tabledata):  # this function turns the data from the template into instructions for the lineprint function
     rulemod = 0  # this variable allows interpretation of lines with different lengths, for example smaller and larger font sizes, inversions etc.
-    if rulestemp[0] == 'C':
+    if rulestemp[0] == 'C': #the following program of if/elif/else statements logically decomposes the line in the rules file
         if rulestemp[1] == 'I':
             alignment = 'center inverse'
             rulemod += 1
@@ -226,13 +232,9 @@ def ruleparser(rulestemp,tabledata):  # this function turns the data from the te
         else:
             alignment = 'top'
     elif rulestemp[0] == '*':
-        alignment = 'BLANK'
-        setfont = 'BLANK'
-        linetext = 'BLANK'
+        alignment, setfont, linetext = 'BLANK', 'BLANK', 'BLANK'
     elif rulestemp[0] == 'H' and rulestemp[1] == 'R':
-        alignment = 'HLINE'
-        setfont = 'HLINE'
-        linetext = 'HLINE'
+        alignment, setfont, linetext = 'HLINE', 'HLINE', 'HLINE'
     if rulestemp[1 + rulemod] == '~' and rulestemp[2 + rulemod] != '~':
         setfont = '1'
     elif rulestemp[1 + rulemod] == '~' and rulestemp[2 + rulemod] == '~' and rulestemp[3 + rulemod] != '~':
@@ -256,23 +258,23 @@ def ruleparser(rulestemp,tabledata):  # this function turns the data from the te
     linestructure = [(alignment), (setfont), (linetext), (linecolour)]
     return linestructure
 
-def tableviewer(tabledata,csvname):
-    bl()
+def tableviewer(tabledata,csvname): # logs the data extracted from the CSV for later analysis
+    log.write(' ' + '\n')
     for x in range (len(tabledata)):
-        print('card ' + str(x + 1) + ' ', end='')
-        print(tabledata[x])
-        print(' ')
-    print ('Card Sharp has detected ' +str(len(tabledata))+ ' card entries in ' +(csvname)+ '.csv')
-    bl()
+        log.write('card ' + str(x + 1) + ' ')
+        log.write(str(tabledata[x]) + '\n')
+        log.write(' ' + '\n')
+    log.write ('Card Sharp has detected ' +str(len(tabledata))+ ' card entries in ' +(csvname)+ '.csv')
+    log.write(' ' + '\n')
 
 def bl():
     print (' ')
     
 # PROGRAM STARTUP
 #-------------------------------------------
-parser = argparse.ArgumentParser(prog="Card Sharp")
+parser = argparse.ArgumentParser(prog="Card Sharp") # the subsequent lines contain the command line arguments
 parser.add_argument("CSV", nargs = '?', help = "The name of the CSV to be read")
-parser.add_argument("-d", "--debug", action='store_true', help = "runs in debug mode.")
+parser.add_argument("-d", "--debug", action='store_true', help = "runs in debug mode")
 parser.add_argument("-u", "--user", action='store_true', help = "uses user-defined config settings")
 group = parser.add_mutually_exclusive_group()
 group.add_argument("-t", "--text", action='store_true', help = "produces text output")
@@ -295,9 +297,24 @@ increment = 0
 while os.path.exists((path) + ' ' + (today) + ' ' + str(increment)):
     increment += 1
 path = path + ' ' + today + ' ' + str(increment) #Adds todays date and an increment number to the output directory path
-if args.debug:
+if args.debug: # creates a log file
+    now = datetime.now()
+    smalltime = now.strftime("%H:%M:%S")
+    try:
+        os.makedirs((currentdir) + '/Logs/')
+    except OSError as exc:  # handles the error if the directory already exists
+        if exc.errno != errno.EEXIST:
+            raise
+        pass
+    logincrement = 0
+    while os.path.exists((currentdir) + '/Logs/log' + ' ' + (today) + ' ' + str(logincrement) + '.txt'):
+        logincrement += 1
+    log = open((currentdir) + '/Logs/log' + ' ' + (today) + ' ' + str(logincrement) + '.txt', "w")
+    log.write ('Card Sharp Log number ' +str(logincrement)+ '. Date: ' + (today) + '. Time: ' +(smalltime))
+    log.write(' ' + '\n')
+    log.write(' ' + '\n')
     tableviewer(tabledata,csvname)
-if args.text:
+if args.text: # makes text files
     bl()
     print ('Card Sharp is creating ' + str(len(tabledata)) + ' txt files in ' +(path)+ ' from ' +(csvname)+ '.csv')
     bl()
@@ -307,7 +324,7 @@ if args.text:
         print ('Card Sharp has successfully created ' + str(len(filelist))+ ' txt files in ' +(path))
     else:
         print ('Unknown error.')
-elif args.image:
+elif args.image: # makes image files
     bl()
     print ('Card Sharp is creating ' + str(len(tabledata)) + ' png files in ' +(path)+ ' from ' +(csvname)+ '.csv')
     bl()
@@ -317,3 +334,4 @@ elif args.image:
         print ('Card Sharp has successfully created ' + str(len(filelist))+ ' png files in ' +(path))
     else:
         print ('Unknown error.')
+log.close()

@@ -97,7 +97,7 @@ The Jewel of the Deeps,Artefact ,2+,Worth 100G ,(at the end of the game),,,,,Nor
 The Old Crown,Artefact ,2+,Worth 100G ,(at the end of the game),,,,,Normal,Artefact
 The Doom Hammer,Artefact ,2+,Worth 100G ,(at the end of the game),,,,,Normal,Artefact
 The Robes of Bhazz,Artefact ,2+,Worth 100G ,(at the end of the game),,,,,Normal,Artefact
-The Darkness Hungers!,Special,2+,The Darkness Approaches.../The Darkness Hungers!,(at the end of the game),,,,,Double-sided Foil,Special
+The Darkness Hungers!,Special,2+,The Darkness Approaches...,The Darkness Hungers!,,,,,Double-sided Foil,Special2
 Mission from the Queen 1,Mission,2+,Retrieve the the Axe of Fhaldun, and the Helm of Ghrond,,,,,Mission,Mission
 Mission from the Queen 2,Mission,2+,Retrieve the Helm of Ghrond, and the Emerald Gauntlets,,,,,Mission,Mission
 Mission from the Queen 3,Mission,2+,Retrieve the Emerald Gauntlets, and the Book of Judgements,,,,,Mission,Mission
@@ -116,8 +116,8 @@ Mission from the Queen 15,Mission,2+,Retrieve 3 Splendid Treasures, in one Delve
 Mission from the Queen 16,Mission,2+,Retrieve 1 Astonishing Treasure, in one Delve,,,,,Mission,Mission
 Mission from the Queen 17,Mission,2+,Retrieve any 3 artifacts,,,,,,Mission,Mission
 Mission from the Queen 18,Mission,2+,Survive an Encounter, with The Living Darkness,,,,,Mission,Mission
-Delve Indicator Card,Special,2+,First Delve/Second Delve/Third Delve,,,,,,Double-sided,Special
-Loan Shark,Special,2+,(TBD),,,,,,Double-sided,Special
+Delve Indicator Card,Special,2+,First Delve,Second Delve,Third Delve,,,,Double-sided,Special
+Loan Shark,Special,2+,Charges 20G interest,Breaks legs upon late payment,,,,,Double-sided,Special2
 Lucky' Dhorzan,Expedition Leader,2+,Can avoid one of any hazard,,,,NEUTRAL,,Leader,Adventurer
 Lady Minewater,Expedition Leader,2+,Starts with an extra 10G,(and thus always goes first),,,NEUTRAL,,Leader,Adventurer
 Thorgi Silvertongue,Expedition Leader,2+,All adventurers (including peons),cost 2G less to hire initially, (does not affect buyout price),,NEUTRAL,,Leader,Adventurer
@@ -139,11 +139,11 @@ Peon,Peon,2+,Can carry 2 treasures,when uninjured,,,NEUTRAL,15G,Normal,Adventure
 Peon,Peon,2+,Can carry 2 treasures,when uninjured,,,NEUTRAL,15G,Normal,Adventurer
 Peon,Peon,2+,Can carry 2 treasures,when uninjured,,,NEUTRAL,15G,Normal,Adventurer
 Clairvoyant,Basic Adventurer,2+,You may void 2 card stacks for free,,,,NEUTRAL,15G,Normal,Adventurer
-Accountant,Basic Adventurer,2+,Adventurers and Peons cost One G less to hire each,,,,STEADFAST,20G,Normal,Adventurer
+Accountant,Basic Adventurer,2+,Adventurers and Peons cost,1G less to hire each,,,,STEADFAST,20G,Normal,Adventurer
 Quartermaster,Basic Adventurer,2+,Carries 1 extra treasure,,,,NEUTRAL,20G,Normal,Adventurer
 Fence,Basic Adventurer,2+,Each treasure returned to surface," is worth an extra 5/10/15G,",depending on depth.,,MERCENARY,20G,Normal,Adventurer
 Paladin,Basic Adventurer,2+,Can absorb one point of hazard damage, per turn without taking damage,,,STEADFAST,20G,Normal,Adventurer
-Medic,Basic Adventurer,2+,Can heal adventurers or peons,for the cost of 5 G,,,NEUTRAL,20G,Normal,Adventurer
+Medic,Basic Adventurer,2+,Can heal adventurers or peons,for the cost of 5G,,,NEUTRAL,20G,Normal,Adventurer
 Opportunist,Basic Adventurer,2+,Can pick up one treasure,during the escape,,,MERCENARY,15G,Normal,Adventurer
 Archaeologist,Basic Adventurer,2+,Can carry one extra artefact.,Half cost if you have an artefact.,,,NEUTRAL,20G,Normal,Adventurer
 Bowdwarf,Basic Adventurer,2+,Avoids one MA hazard,,,,STEADFAST,25G,Normal,Adventurer
