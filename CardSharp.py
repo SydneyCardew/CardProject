@@ -67,9 +67,12 @@ def imgmaker(tabledata, filename,path,configseg):  # reads the rules and coordin
     for w in range(len(tabledata)):
         settings = []
         rulelist = []
+        config = configparser.ConfigParser()  # the following lines extract the text settings from the config file
+        config.read('Settings/config.ini')
+        layoutfield = config[(configseg)]['layoutfield']
         try:
-            with open('Layouts/' + (tabledata[w][10]) + '.txt',
-                      "r") as template:  # reads the appropriate layout file, stored in index 10 of each card entry
+            with open('Layouts/' + (tabledata[w][int(layoutfield)]) + '.txt',
+                      "r") as template:  # reads the appropriate layout file, stored by default in index 10 of each card entry
                 for line in template:
                     if line.startswith('###'):  # ignores comments in the layout file
                         pass
