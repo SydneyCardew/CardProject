@@ -150,7 +150,7 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg): #this ro
         padding = textset[2] - textset[0]
         d.line([(textset[0], downcursor - 5), (padding, downcursor - 5)], fill=(rvalue, gvalue, bvalue), width=2)
     else:
-        if linestructure[1] == '1':
+        if linestructure[1] == '1': #these if statements set the font size
             curfnt = headerfnt
         elif linestructure[1] == '2':
             curfnt = biggerfnt
@@ -206,7 +206,7 @@ def lineprint(linestructure, downcursor, textset, cardno, d,configseg): #this ro
 
 def ruleparser(rulestemp,tabledata):  # this function turns the data from the template into instructions for the lineprint function
     rulemod = 0  # this variable allows interpretation of lines with different lengths, for example smaller and larger font sizes, inversions etc.
-    if rulestemp[0] == 'C': #the following program of if/elif/else statements logically decomposes the line in the rules file
+    if rulestemp[0] == 'C': #the following program of if/elif/else statements logically decomposes the line in the layout file
         if rulestemp[1] == 'I':
             alignment = 'center inverse'
             rulemod += 1
